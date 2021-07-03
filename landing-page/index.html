@@ -5,49 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Landing-Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li>Home</li>
+                <li> <a href="#home" class="itens-nav">Home</a></li>
             </ul>
             <ul>
-                <li>Fale conosco</li>
+                <li><a href="#fale-conosco" class="itens-nav">Fale Conosco</a></li>
             </ul>
             <ul>
-                <li>Contato</li>
+                <li><a href="#contato" class="itens-nav">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <div id="context">
+    <main >
         <section id="home">
-            <h2>Já conhece ou tem alguma solução tecnologica em sua empresa?</h2>
-            <p>
-                A JB1T CO. pode te ajudar com isso!
-                Nos desenvolvemos qualquer aplicação desde desktop a web 
-                você vai ser bem atendido pelo nossos sistemas criados conforme a sua demanda.
-            </p>
-            <a href="#fale-conosco">Envie uma mensagem para nos</a>
+            <div>
+                <h2>Já conhece ou tem alguma solução tecnologica em sua empresa?</h2>
+                <p>
+                    A JB1T CO. pode te ajudar com isso!
+                    Nos desenvolvemos qualquer aplicação desde desktop a web
+                    você vai ser bem atendido pelo nossos sistemas criados conforme a sua demanda.
+                </p>
+                <button type="button"><a href="#fale-conosco">Envie uma mensagem para nos</a></button>
+            </div>
         </section>
         <section id="fale-conosco">
-            <form action="#" method="post">
-                <label for="nome">Seu Nome</label>
-                <input type="text" name="" id="nome">
-                <label for="email">Seu E-mail</label>
-                <input type="email" name="" id="email">
-                <label for="mensagem">Sua mensagem</label>
-                <input type="text" name="" id="mensagem">
-                <button type="submit">Envia Mensagem</button>
-            </form>
+            <div>
+                <form action="#" method="post">
+                    <div>
+                        <label for="nome">Seu Nome</label>
+                        <input type="text" name="" id="nome">
+                    </div>
+                    <div>
+                        <label for="email">Seu E-mail</label>
+                        <input type="email" name="" id="email">
+                    </div>
+                    <div>
+                        <label for="mensagem">Sua mensagem</label>
+                        <input type="text" name="" id="mensagem">
+                    </div>
+                    <button type="submit">Envia Mensagem</button>
+                </form>
+            </div>
         </section>
         <section id="contato">
-
+            <div>
+                <h1>Contato</h1>
+                <p>Aqui estão todos os nosso contato se no futuro você quiser nos procurar!</p>
+                <p>Telefone</p>
+                <p>E-mail</p>
+            </div>
         </section>
     </main>
     <footer>
         <p>JB1T CO. &copy; 2021 Todos os direitos reservados. </p>
     </footer>
+    </div>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
