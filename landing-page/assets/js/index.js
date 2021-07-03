@@ -1,5 +1,6 @@
+var p = prompt("Digite seu nome");
+var h1 = document.createElement("h1");
+var home = document.getElementById("home");
 
-function greetings(){
-    prompt("Insira seu email para receber nosso Informativo 2021!")
-}  
-
+h1.innerText = p;
+home.appendChild(h1);
